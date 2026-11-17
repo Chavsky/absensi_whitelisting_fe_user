@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Design Tokens matching formal Admin Web theme */
+    --color-primary: #0F172A;
+    --color-primary-accent: #2563EB;
+    --color-primary-hover: #1D4ED8;
+    --color-surface: #FFFFFF;
+    --color-surface-subtle: #F8FAFC;
+    --color-border: #E2E8F0;
+    --color-border-subtle: #F1F5F9;
+    --color-text-main: #0F172A;
+    --color-text-muted: #64748B;
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: var(--color-text-main);
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* Custom utility classes */
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 16px));
+}
+
+.safe-top {
+  padding-top: max(0.75rem, env(safe-area-inset-top, 12px));
+}

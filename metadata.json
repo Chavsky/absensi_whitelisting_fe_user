@@ -1,0 +1,6 @@
+{
+  "name": "Employee PWA - Sistem Absensi Karyawan",
+  "description": "Aplikasi Progressive Web App (PWA) Absensi Karyawan berbasis on-premise dengan antarmuka mobile-first yang formal, cepat, dan profesional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
